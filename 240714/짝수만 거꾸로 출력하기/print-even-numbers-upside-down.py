@@ -1,11 +1,8 @@
 n = int(input())
 l = []
 for i in range(n):
-    k = int(input())
-    if k % 2 == 0:
-        l.append(k)
-
-if l:
-    print("".join(map(str, reversed(l))))
-else:
-    print(0)
+    k = map(int, input().split())
+    for j in k:
+        if j % 2 == 0:
+            l.append(j)
+print("".join(map(str, reversed(l))))
