@@ -4,4 +4,6 @@ for i in range(n):
     k = int(input())
     if k % 2 == 0:
         l.append(k)
-print("".join(map(str, reversed(l))))
+
+if l:
+    print("".join(map(str, reversed(l))))
