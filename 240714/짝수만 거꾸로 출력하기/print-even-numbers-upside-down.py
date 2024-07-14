@@ -7,3 +7,5 @@ for i in range(n):
 
 if l:
     print("".join(map(str, reversed(l))))
+else:
+    print(0)
