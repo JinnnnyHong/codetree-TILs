@@ -8,4 +8,6 @@ for j in range(k):
     else:
         break
 
-print(sum(l), sum(l)/len(l))
+total = sum(l)
+average = round(total / len(l), 1)
+print(total, average)
