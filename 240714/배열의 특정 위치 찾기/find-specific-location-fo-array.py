@@ -1,12 +1,10 @@
 k = 0
-l = []
+l = []  
 lst = list(map(int, input().split()))
+n = len(lst)
 for i in lst:
-    if i % 2 == 0 and i % 3 != 0:
+    if i % 2 == 0:
         k += i
-    elif i % 2 != 0 and i % 3 == 0:
-        l.append(i)
-    elif i %2 ==0 and i % 3 == 0:
-        k += i
-        l.append(i)
+for j in range(1, n, 2):
+    l.append(lst[j])
 print(k, round(sum(l)/len(l), 1))
