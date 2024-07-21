@@ -6,5 +6,5 @@ while True:
     counts[c-1] += 1
     if a < 1:
         break
-squares_sum = sum([x**2 for x in counts])
+squares_sum = sum(x**2 for x in counts)
 print(squares_sum)
