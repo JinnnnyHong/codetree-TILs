@@ -14,4 +14,4 @@ if counts[0] >= 2:
     counts.append('E')
     print(' '.join(map(str, counts)))
 else:
-    print(counts)
+    print(' '.join(map(str, counts)))
