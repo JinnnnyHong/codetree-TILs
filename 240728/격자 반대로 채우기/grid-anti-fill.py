@@ -20,7 +20,7 @@ for col in range(n):
         else:
             for row in range(n-1, -1, -1):
                 a[row][col] = count
-                count += 1
+                count -= 1
 
 for row in range(n):
     for col in range(n):
