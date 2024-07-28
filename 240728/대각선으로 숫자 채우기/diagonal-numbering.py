@@ -5,7 +5,7 @@ count = 1
 for diag in range(n + m):
     for i in range(n):
         for j in range(m):
-            if c == i+j:
+            if diag == i+j:
                 a[i][j] = count
                 count +=1
 
