@@ -8,7 +8,7 @@ def four(a, o, c):
             result = a-c
             print(f"{a} - {c} = {result}")
         elif o == '/':
-            result = a+c
+            result = a//c
             result = int(result)
             print(f"{a} / {c} = {result}")
         else:
