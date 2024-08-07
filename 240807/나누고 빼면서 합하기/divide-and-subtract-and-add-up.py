@@ -1,7 +1,7 @@
 def kk(a, b, A):
     total_sum = 0
-    while b >= 1:
-        total_sum += A[m - 1]
+    while b > 1:
+        total_sum += A[b - 1]
         if b % 2 == 0:
             b //= 2
         else:
