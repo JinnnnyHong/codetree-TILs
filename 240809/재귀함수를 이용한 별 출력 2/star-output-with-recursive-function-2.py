@@ -1,7 +1,11 @@
-n = 5
-
-for i in range(n, 0, -1):
-    print('* ' * i)
-
-for i in range(1, n + 1):
-    print('* ' * i)
+def print_stars(n):
+    if n == 0:
+        return
+    print('* ' * n)
+    
+    
+    print_stars(n - 1)
+    print('* ' * n)
+    
+n = int(input())
+print_stars(n)
